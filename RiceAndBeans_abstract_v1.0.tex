@@ -12,7 +12,9 @@ cp,  % Conference Proceedings
 %author-numerical,%
 ]{revtex4-2}
 
+
 \usepackage{graphicx}% Include figure files
+
 \usepackage{dcolumn}% Align table columns on decimal point
 \usepackage{bm}% bold math
 %\usepackage[mathlines]{lineno}% Enable numbering of text and display math
@@ -28,33 +30,36 @@ cp,  % Conference Proceedings
 
 \begin{document}
 
-\title{The Title Goes Here with Each Initial Letter Capitalized}% Force line breaks with \\
+\title{Preliminary Study on Decentralized Vision-Based Autonomous Drone Swarms}% Force line breaks with \\
 
 \author{Jordy A. Larrea Rodriguez} % Write as First name Surname
- \email{Jordy.LarreaRodriguez@gmail.com}
+ \email[Contact: ]{Jordy.LarreaRodriguez@gmail.com}
  \affiliation{
     Department of Electrical and Computer Engineering \newline
     \mbox{University of Utah, Salt Lake City, Ut, USA}
 }
 
 \author{Brittney L. Morales}%
- \email{brittneymrls@gmail.com}
+ \email[Contact: ]{brittneymrls@gmail.com}
 
 \author{Misael Nava}
- \email{misaelnava812@gmail.com}
+ \email[Contact: ]{misaelnava812@gmail.com}
 
-\date{\today} % It is always \today, today, but any date may be explicitly specified
-              % Not printed for conference proceedings
 \begin{abstract}
-An article usually includes an abstract, a concise summary of the work
-covered at length in the main body of the article. It is used for
-secondary publications and for information retrieval purposes.
+
+\textbf{INTRODUCTION: } Conventional technology for autonomous unmanned aerial vehicle (UAV) swarms involves a centralized system for control of all units. Take drone light shows, the choreography observed in these kind of spectacles is planned, simulated, and then loaded into individual adequately spaced drones. A number of fail-safes are deployed in order to minimize damages from a rouge drone failing to keep to its pre-planned path. The state of art in autonomous swarms employs a decentralized model consisting of multi-agent networks. These multi agent systems hold the potential to adapt to new environments and optimize individual performance to specific tasks without having to deal with global systems prone to single points of failure. Our team's focus lies therein decentralized multi agent systems.    
+\newline\textbf{METHODS: } The decentralized multi agent system will consist of two medium sized quad-rotors consisting of open source flight controller hardware and software (PX4) interfaced through MAVlink by raspberry pi 4 companion computers for edge specifications. A central system is still beneficial for assignment of global objectives; thus, our proposed decentralized system will employ a central bay station to communicate objectives for the agents to complete. GPS modules, infrared sensors, and low-resolution cameras will be procured for real time decision making by the agent(s). Our development stack will leverage the Robot Operating System (ROS) for project management, simulation capabilities, navigation libraries, and native server client model in robotics applications.  
+\newline\textbf{DISCUSSION: } Flocking behavior observed in nature leverages vision for spatial awareness; thus, our decentralized agents will leverage edge computing and on-board cameras to interact with themselves and the environment. Decentralized swarms allow for a set of agents to act as more than distributed actuators: i.e., more like your white blood cells rather than your limb. 
+\newline\textbf{SIGNIFICANCE: } Drone Swarms hold the potential to gather large quantities of data for monitoring and area mapping that would otherwise prove too costly to collect. Furthermore, UAV's hold a potential to greatly simplify and reduce manpower in search-and-rescue, disaster recovery, or security scenarios \cite{RN101}. Swarms essentially hold the capability to replace humans in potentially dangerous and normally costly tasks.
 \end{abstract}
 
 \maketitle
 
+
 \nocite{*}
+\bibliographystyle{ieeetran}
 \bibliography{Abstract_final_lib}% Produces the bibliography via BibTeX.
+
 
 \end{document}
 %
